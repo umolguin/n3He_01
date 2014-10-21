@@ -1,0 +1,10 @@
+"G4Isotope* he3 = new G4Isotope(name="he3", iz=2, n=3, a);
+	G4Element* He3 = new G4Element(name="He3", symbol="He3", ncomponents=1);
+	He3->AddIsotope(he3, abundance=100.*perCent);
+	G4Material* He3Gas = new G4Material(name="He3Gas",
+					    density,
+					    ncomponents=1,
+					    kStateGas,
+					    temperature,
+					    pressure);
+	He3Gas->AddElement(He3, fractionmass = 100.*perCent);"
